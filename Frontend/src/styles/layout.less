@@ -1,0 +1,227 @@
+#root, .frame-layout {
+  height: 100%;
+}
+main {
+  margin: 32px !important;
+  padding: 0 !important;
+}
+
+.frame-layout {
+  .trigger {
+    padding: 0 24px;
+    font-size: 18px;
+    line-height: 64px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  .trigger:hover {
+    color: #e2e4e5;
+  }
+  .box{
+    height: 69px;
+   }
+   /* logo */
+  .logo {
+    height: 69px;
+    width: 100%;
+    /* margin: 16px; */
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    background: rgb(255, 255, 255);
+    /* position: absolute; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    padding-top: 6px;
+    margin-left: 2px;
+    img {
+      margin-right: 12px;
+    }
+    span {
+      width: 81px;
+      height: 30px;
+      font-size: 22px;
+      font-family: PingFangSC-Medium, PingFang SC !important;
+      font-weight: 700;
+      color: #171819;
+      line-height: 30px;
+      }
+  }
+}
+
+/* Background */
+.ant-layout {
+  background: #EEF1F7;
+}
+
+/* Header Background */
+.site-layout {
+  .site-layout-background {
+    background: rgb(255, 255, 255);
+    z-index: 100;
+  }
+}
+
+/* Content Background */
+.ant-layout-content {
+  background: #EEF1F7 !important;
+}
+
+/* Header */
+.ant-layout-header {
+  height: 97px !important;
+  position: relative !important;
+  .header-title {
+    width: 80px;
+    height: 28px;
+    font-size: 20px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 28px;
+    margin: 16px 0 0 32px !important;
+  }
+  .userName {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 32px;
+    top: 20px;
+    cursor: pointer;
+    span {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      margin-left: 8px;
+    }
+  }
+}
+/* Header Route, Title */
+.ant-breadcrumb {
+  margin:16px 0 0 32px !important;
+}
+
+/* Dropdown Menu */
+.ant-dropdown-menu-title-content {
+  text-align: center;
+  color: #FF3C3C;
+}
+
+/* Sider */
+.ant-layout-sider,.ant-menu-dark{
+  background: rgb(255, 255, 255) !important;
+  box-shadow: -2px 2px 60px 0px rgba(0, 0, 0, 0.12) !important;
+}
+aside {
+  flex: 0 0 196px !important;
+  max-width: 200px !important;
+  min-width: 196px !important;
+  width: 196px !important;
+  overflow: auto;
+}
+
+/*Scrollbar start*/
+aside::-webkit-scrollbar {
+  width: 7px;
+  height: 4px;
+  background-color: #f5f5f5;
+}
+
+aside::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background: #fff;
+}
+
+aside::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgba(245, 238, 238, 0.7);
+}
+aside::-webkit-scrollbar-thumb:hover {
+  border-radius: 3px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgba(245, 238, 238, 1);
+}
+
+/* .box {
+  height: 100%;
+  overflow: auto;
+} */
+/* .ant-menu{
+  height: 100% !important;
+  overflow: auto;
+} */
+
+/* Selected menu */
+.ant-menu.ant-menu-dark {
+  .ant-menu-item-selected {
+    background-color: #1790fc !important;
+  }
+}
+
+/* font color */
+.ant-menu-item{
+  height: 64px !important;
+  font-size: 14px;
+  color: rgb(0, 0, 0) !important;
+  padding: 0 28px !important;
+  margin: 0 !important;
+}
+
+.ant-menu-item-selected {
+  .ant-menu-title-content{
+    color: white !important;
+  }
+}
+
+
+/* .ant-menu-dark .ant-menu-item-selected .ant-menu-item-icon + span, .ant-menu-dark .ant-menu-item-selected .anticon + span{
+   color: black !important;
+} */
+
+/* Menu font */
+.ant-menu-title-content{
+  font-size: 14px !important;
+  margin: 0 !important;
+  font-family: PingFangSC-Medium, PingFang SC !important;
+  font-weight: 900 !important;
+  color: #171819 !important;
+  line-height: 20px !important;
+  display: flex;
+  justify-content: center;
+  margin-left: -41px !important;
+  .ct{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500 !important;
+    padding-left: 41px !important;
+  }
+}
+
+
+.ant-menu-item-icon {
+  font-size: 26px !important;
+  color: #1790fc !important;
+  margin-right: 15px !important;
+}
+
+.ant-menu-submenu-title {
+  padding: 0 27px !important;
+  height: 64px !important;  
+}
+
+.ant-menu-title-content {
+  color: #000;
+}
+.ant-menu-submenu-arrow::after,.ant-menu-submenu-arrow::before {
+  background: black !important;
+}
+
+
+.ant-menu-item-only-child {
+  background: #EDF0F6 !important;
+}
+

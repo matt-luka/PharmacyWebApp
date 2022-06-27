@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.loginBox() {
+  width: 500px;
+  height: 510px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    color: #64a6e2;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 50px 0;
+  }
+
+  .form {
+    width: 80%;
+
+    .formItem {
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-bottom: 20px;
+      img {
+        height: 16px;
+        position: absolute;
+        margin-left: 25px;
+      }
+
+      input {
+        height: 50px;
+        border: 1px solid #a7a7a7;
+        width: 100%;
+        border-radius: 50px;
+        padding-left: 60px;
+      }
+    }
+  }
+
+  .register {
+    text-decoration: underline;
+    color: #65a6e0;
+    margin-top: 10px;
+    width: 80%;
+    text-align: right;
+    padding-right: 20px;
+    cursor: pointer;
+
+    &:hover {
+      color: #88b8e1;
+    }
+  }
+
+  .signIn {
+    margin-top: 50px;
+    color: #FFFFFF;
+    width: 80%;
+
+    button {
+      border-radius: 50px;
+      height: 50px;
+      width: 100%;
+      border: none;
+      background-color: #65a6e0;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #88b8e1;
+      }
+    }
+  }
+}
+.loginPage{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .bigBox {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('../images/login.jpg') no-repeat;
+      background-size: cover;
+      .loginBox{
+        .loginBox()
+      }
+    }
+    .registBox{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      .left{
+        width: 65%;
+        background: url('../images/regist.jpg') no-repeat center;
+        background-size: cover;
+      }
+      .right{
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .loginBox{
+          .loginBox()
+        }
+      }
+    }
+}
+.error {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  background: rgba(0, 0, 0, .5);
+  position: absolute;
+  padding: 5px 10px;
+  border-radius: 8px;
+  top: 100px;
+  left: 50%;
+  display: none;
+}
+
